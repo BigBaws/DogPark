@@ -41,7 +41,7 @@ public class Messages extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Messages.
+     * @return A new instance of fragment Message.
      */
     // TODO: Rename and change types and number of parameters
     public static Messages newInstance(String param1, String param2) {
