@@ -7,4 +7,18 @@ import grp27.dogpark.Controllers.Interfaces.IMessage;
  */
 
 public class Message implements IMessage {
+    @Override
+    public Message getMessage(int userid) {
+        return null;
+    }
+
+    @Override
+    public Message getMessages(int userid) {
+        return null;
+    }
+
+    @Override
+    public Message sendMessage(int userid) {
+        return null;
+    }
 }
