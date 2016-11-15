@@ -9,7 +9,7 @@ import grp27.dogpark.R;
 public class CollectionDemoActivity extends FragmentActivity {
     // When requested, this adapter returns a DemoObjectFragment,
     // representing an object in the collection.
-    DemoCollectionPagerAdapter mDemoCollectionPagerAdapter;
+    DemoCollectionPagerAdapter mPagerAdapter;
     ViewPager mViewPager;
 
     public void onCreate(Bundle savedInstanceState) {
@@ -18,10 +18,8 @@ public class CollectionDemoActivity extends FragmentActivity {
 
         // ViewPager and its adapters use support library
         // fragments, so use getSupportFragmentManager.
-        mDemoCollectionPagerAdapter =
-                new DemoCollectionPagerAdapter(
-                        getSupportFragmentManager());
+        mPagerAdapter = new DemoCollectionPagerAdapter(getSupportFragmentManager());
         mViewPager = (ViewPager) findViewById(R.id.pager);
-        mViewPager.setAdapter(mDemoCollectionPagerAdapter);
+        mViewPager.setAdapter(mPagerAdapter);
     }
 }
